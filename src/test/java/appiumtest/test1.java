@@ -3,7 +3,6 @@ package appiumtest;//package��
 import java.io.FileNotFoundException;
 import java.net.URL;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
@@ -29,7 +28,7 @@ public class test1
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("appPackage", "com.android.calculator2");
 		capabilities.setCapability("appActivity", ".Calculator");
-		driver = new AndroidDriver(new URL("http://16.165.184.8:4723/wd/hub"), capabilities);
+		driver = new AndroidDriver(new URL("http://16.165.184.28:4723/wd/hub"), capabilities);
 
 	}
 
@@ -47,9 +46,13 @@ public class test1
 
 		//final WebElement element = null;
 		//driver.findElement(By.id("com.android.calculator2:id/digit_1")).click();
+		System.out.println("asdfasf");
 		driver.findElementById("com.android.calculator2:id/digit_1").click();
+		driver.findElementById("com.android.calculator2:id/digit_1").click();
+		//driver.findElementById("com.android.calculator2:id/digit_1").click();
 		//driver.findElementByName("1");
-		driver.findElement(By.id("digit_1")).click();
+		//driver.findElement(By.id("digit_1")).click();
+		//driver.findElement(By.id("digit_1")).click();
 		//driver.findElementById("digit_1").click();
 		//element = ComUtils.getObjElement(driver, "digit_1", "id");
 		//element.click();
@@ -71,8 +74,8 @@ public class test1
 		//		System.out.println(result);
 		ComUtils.snapshot(driver, "screen");
 		driver.quit();
-		comLib.ComUtils.logWriter("logwriter  ", "C:\\Users\\shaozi-y\\workspace\\test-java\\log\\log20161008.txt", true);
-		comLib.ComUtils.createNewFile("C:\\Users\\shaozi-y\\workspace\\test-java\\log\\log20161008.txt");
+		comLib.ComUtils.logWriter("Jenkins  ", "C:\\Users\\shaozi-y\\workspace\\test-java\\log\\log20161008.txt", true);
+		comLib.ComUtils.createNewFile("C:\\Users\\shaozi-y\\workspace\\test-java\\log\\log20161009.txt");
 	}
 
 }
