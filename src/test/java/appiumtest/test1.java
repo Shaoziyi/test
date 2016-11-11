@@ -47,8 +47,8 @@ public class test1
 		//final WebElement element = null;
 		//driver.findElement(By.id("com.android.calculator2:id/digit_1")).click();
 		System.out.println("asdfasf");
-		driver.findElementById("com.android.calculator2:id/digit_1").click();
-		driver.findElementById("com.android.calculator2:id/digit_1").click();
+		//driver.findElementById("com.android.calculator2:id/digit_1").click();
+		//driver.findElementById("com.android.calculator2:id/digit_1").click();
 		//driver.findElementById("com.android.calculator2:id/digit_1").click();
 		//driver.findElementByName("1");
 		//driver.findElement(By.id("digit_1")).click();
@@ -56,7 +56,7 @@ public class test1
 		//driver.findElementById("digit_1").click();
 		//element = ComUtils.getObjElement(driver, "digit_1", "id");
 		//element.click();
-		driver.findElementById("com.android.calculator2:id/op_add").click();
+		//driver.findElementById("com.android.calculator2:id/op_add").click();
 		driver.findElementById("com.android.calculator2:id/digit_2").click();
 		driver.findElementById("com.android.calculator2:id/eq").click();
 		//driver.findElementById("com.android.calculator2:id/digit_1").click();
