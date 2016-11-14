@@ -13,17 +13,6 @@ import java.net.URLConnection;
 import java.util.Date;
 
 
-/**
- * Filename: JspToHtml.java <br>
- * Ttitle: jsp转换成html<br>
- * De.ion: 把动态网页转换成静态网页<br>
- * Copyright: Copyright (c) 2002-2008 BocSoft,Inc.All Rights Reserved. <br>
- * Company: BocSoft<br>
- * Author: <a href="mailto:sgicer@163.com">阿汐</a> <br>
- * Date: 2006-6-19 <br>
- * Time: 16:41:09 <br>
- * Version: 2.0.0 <br>
- */
 public class JspToHtml
 {
 
@@ -31,15 +20,6 @@ public class JspToHtml
 	private static String context = "标题测试";
 	private static String editer = "标题测试";
 
-	/**
-	 * 根据本地模板生成静态页面
-	 *
-	 * @param JspFile
-	 *           jsp路经
-	 * @param HtmlFile
-	 *           html路经
-	 * @return
-	 */
 	public static boolean JspToHtmlFile(final String filePath, final String HtmlFile)
 	{
 		String str = "";
@@ -65,7 +45,7 @@ public class JspToHtml
 
 			str = str.replaceAll("跳过原因", title);
 			str = str.replaceAll("失败原因", context);
-			str = str.replaceAll("###author###", editer);//替换掉模块中相应的地方
+			str = str.replaceAll("###author###", editer);//replace the file text
 
 			final File f = new File(HtmlFile);
 			final BufferedWriter o = new BufferedWriter(new FileWriter(f));
@@ -81,18 +61,10 @@ public class JspToHtml
 		return true;
 	}
 
-	/**
-	 * 根据url生成静态页面
-	 *
-	 * @param u
-	 *           动态文件路经 如：[url]http://www.163.com/x.jsp[/url]
-	 * @param path
-	 *           文件存放路经如：x:\\abc\bbb.html
-	 * @return
-	 */
+
 	public static boolean JspToHtmlByURL(final String u, final String path)
 	{
-		//从utl中读取html存为str
+		//read utl, get html, save as str
 		String str = "";
 		try
 		{
@@ -106,7 +78,7 @@ public class JspToHtml
 
 			}
 			is.close();
-			//写入文件
+			//write file
 			final File f = new File(path);
 			final BufferedWriter o = new BufferedWriter(new FileWriter(f));
 			o.write(str);
@@ -122,15 +94,15 @@ public class JspToHtml
 	}
 
 	/**
-	 * 根据url生成静态页面
+	 *
 	 *
 	 * @param url
-	 *           动态文件路经 如：[url]http://www.163.com/x.jsp[/url]
+	 *           [url]http://www.163.com/x.jsp[/url]
 	 * @return d
 	 */
 	public static StringBuffer getHtmlTextByURL(final String url)
 	{
-		//从utl中读取html存为str
+		//read utl, get html, save as str
 		final StringBuffer sb = new StringBuffer();
 		try
 		{
@@ -153,14 +125,14 @@ public class JspToHtml
 	}
 
 	/**
-	 * 测试main 函数
+	 *
 	 *
 	 * @param arg
 	 */
 	public static void main(final String[] arg)
 	{
 		final long begin = System.currentTimeMillis();
-		//循环生成20个html文件
+		//generate 20 html file
 		for (int k = 0; k < 20; k++)
 		{
 			final String url = "C:\\Users\\shaozi-y\\workspace\\test-java\\report.html";//模板文件地址

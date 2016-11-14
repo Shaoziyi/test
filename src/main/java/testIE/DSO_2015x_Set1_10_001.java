@@ -44,14 +44,14 @@ public class DSO_2015x_Set1_10_001
 		dbMap = new HashMap<String, String>();
 		dbMap = (HashMap<String, String>) ComUtils.connectDB(conString, user, pass, "select * from a1");
 
-		// 鍒涘缓IE web driver
+		// IE web driver
 
 		// File("C:\\Users\\shaozi-y\\workspace\\Selenium\\IEDriverServer_Win32_2.53.1\\IEDriverServer.exe");
-		//璁剧疆椤甸潰姣斾緥
+		//
 		final DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
 		caps.setCapability("ignoreZoomSetting", true);
 
-		//璁剧疆Webdriver璺緞
+		//
 		final File file = new File("C:\\Users\\shaozi-y\\workspace\\Selenium\\IEDriverServer_x64_2.53.1\\IEDriverServer.exe");
 		System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
 		final WebDriver driver = new InternetExplorerDriver(caps);
@@ -59,7 +59,7 @@ public class DSO_2015x_Set1_10_001
 		baseUrl = "https://plmtest.pg.com/";
 		// WebDriver driver = new InternetExplorerDriver();
 
-		// 璁╂祻瑙堝櫒璁块棶 Bing
+		//  Bing
 		//driver.get("http://www.google.com");
 		driver.get(baseUrl);
 		objMap = new HashMap<String, ArrayList<String>>();
@@ -114,30 +114,7 @@ public class DSO_2015x_Set1_10_001
 
 
 
-	/*
-	 *
-	 * public static void main(String[] args) {
-	 *
-	 * // 鍒涘缓IE web driver
-	 *
-	 *
-	 * // File( "C:\\Users\\shaozi-y\\workspace\\Selenium\\IEDriverServer_Win32_2.53.1\\IEDriverServer.exe" );
-	 * //璁剧疆椤甸潰姣斾緥 DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
-	 * caps.setCapability("ignoreZoomSetting", true);
-	 *
-	 * //璁剧疆Webdriver璺緞 File file = new File(
-	 * "C:\\Users\\shaozi-y\\workspace\\Selenium\\IEDriverServer_x64_2.53.1\\IEDriverServer.exe" );
-	 * System.setProperty("webdriver.ie.driver", file.getAbsolutePath()); WebDriver driver = new
-	 * InternetExplorerDriver(caps); driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	 *
-	 * // WebDriver driver = new InternetExplorerDriver();
-	 *
-	 * // 璁╂祻瑙堝櫒璁块棶 Bing driver.get("https://plmtest.pg.com/"); // 鐢ㄤ笅闈唬鐮佷篃鍙互瀹炵幇 //
-	 * driver.navigate().to("http://www.baidu.com");
-	 *
-	 *
-	 * // 鍏抽棴娴忚鍣� driver.quit(); }
-	 */
+
 	public void tearDown() throws Exception
 	{
 		driver1.quit();
