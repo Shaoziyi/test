@@ -28,7 +28,7 @@ public class test1
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("appPackage", "com.android.calculator2");
 		capabilities.setCapability("appActivity", ".Calculator");
-		driver = new AndroidDriver(new URL("http://16.165.184.28:4723/wd/hub"), capabilities);
+		driver = new AndroidDriver(new URL("http://16.165.188.10:4723/wd/hub"), capabilities);
 
 	}
 
