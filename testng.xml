@@ -2,8 +2,8 @@
 <suite name="Suite" parallel="false">
 	<test name="Test">
 		<classes>
-			<class name="appiumtest.test1" />
-			<class name="appiumtest.test1" />
+			
+			<class name="appiumtest.StarbukEnrTest" />
 		</classes>
 	</test> <!-- Test -->
 	<listeners>

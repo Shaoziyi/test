@@ -82,7 +82,7 @@ public class StarbukEnrTest
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("appPackage", "com.hp.starbucksmanager");
 		capabilities.setCapability("appActivity", ".SplashAct");
-		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+		driver = new AndroidDriver(new URL("http://16.165.188.10:4723/wd/hub"), capabilities);
 
 	}
 
