@@ -3,7 +3,7 @@
 	<test name="Test">
 		<classes>
 			<class name="appiumtest.test1" />
-			<class name="appiumtest.test1" />
+			<class name="com.grid.demo.GridDemo" />
 		</classes>
 	</test> <!-- Test -->
 	<listeners>
