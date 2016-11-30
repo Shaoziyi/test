@@ -64,7 +64,7 @@ public class GridDemo
 	}
 
 
-	@DataProvider
+	@DataProvider(name = "data", parallel = true)
 	public Object[][] data()
 	{
 		return new Object[][]
