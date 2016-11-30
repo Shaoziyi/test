@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite" parallel="methods" thread-count="2">
+<suite name="Suite" parallel="class" thread-count="2">
 	<test name="Selenium_Grid_Demo">
 		<classes>			
 			<class name="com.grid.demo.GridDemo" />
