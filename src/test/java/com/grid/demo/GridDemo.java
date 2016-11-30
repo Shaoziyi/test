@@ -1,6 +1,6 @@
 package com.grid.demo;
 
-import java.net.MalformedURLException;
+import java.io.IOException;
 import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
@@ -19,10 +19,10 @@ public class GridDemo
 	 *           node 节点的地址
 	 * @param browser
 	 *           node 节点的浏览器
-	 * @throws MalformedURLException
+	 * @throws IOException
 	 */
 	@Test(dataProvider = "data")
-	public void openBaiduPageTest(final String nodeURL, final String browser) throws MalformedURLException
+	public void openBaiduPageTest(final String nodeURL, final String browser) throws IOException
 	{
 		DesiredCapabilities desiredCapabilities;
 		//      判断要打开的浏览器
@@ -67,6 +67,7 @@ public class GridDemo
 		return new Object[][]
 		{
 				{ "http://16.165.188.82:5555", "chrome" },
-				{ "http://16.165.188.82:5555", "IE" }, };
+				//{ "http://16.165.188.82:5555", "ie" },
+		};
 	}
 }
