@@ -2,6 +2,7 @@ package com.grid.demo;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -45,6 +46,7 @@ public class GridDemo
 		final WebDriver driver = new RemoteWebDriver(new URL(url), desiredCapabilities);
 		//      打开百度
 		driver.get("http://www.bing.com");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		System.out.println(browser + driver.getTitle());
 		//      关闭浏览器
 		driver.quit();
