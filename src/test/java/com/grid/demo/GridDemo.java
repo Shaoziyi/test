@@ -125,33 +125,12 @@ public class GridDemo
 		return new Object[][]
 		{
 				{ "http://16.165.188.82:5555", "ie" },
-				{ "http://16.165.188.82:5555", "chrome" },
-				//{ "http://16.187.153.9:5555", "ie" },
-				//{ "http://16.187.153.11:5555", "chrome" },
-		};
-	}
-
-	@DataProvider
-	public Object[][] data2()
-	{
-		return new Object[][]
-		{
-				{ "http://16.187.153.11", "ie" },
 				{ "http://16.187.153.11", "chrome" },
+				{ "http://16.187.153.9:5555", "ie" },
 				//{ "http://16.187.153.9:5555", "ie" },
 				//{ "http://16.187.153.11:5555", "chrome" },
 		};
 	}
 
-	@DataProvider
-	public Object[][] data1()
-	{
-		return new Object[][]
-		{
-				{ "http://16.187.153.9", "ie" },
-				{ "http://16.187.153.9", "chrome" },
-				//{ "http://16.187.153.9:5555", "ie" },
-				//{ "http://16.187.153.11:5555", "chrome" },
-		};
-	}
+
 }
