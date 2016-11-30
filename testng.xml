@@ -3,6 +3,7 @@
 	<test name="Selenium_Grid_Demo">
 		<classes>			
 			<class name="com.grid.demo.GridDemo" />
+			<class name="com.grid.demo.GridDemo" />
 		</classes>
 	</test> <!-- Selenium_Grid_Demo -->
 	<listeners>
