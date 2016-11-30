@@ -67,6 +67,7 @@ public class GridDemo
 		return new Object[][]
 		{
 				{ "http://16.165.188.82:5555", "ie" },
+				{ "http://16.187.153.9:5555", "ie" },
 				{ "http://16.187.153.11:5555", "chrome" }, };
 	}
 }
