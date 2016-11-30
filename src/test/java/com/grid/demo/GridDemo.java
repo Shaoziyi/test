@@ -102,7 +102,7 @@ public class GridDemo
 		final String url = nodeURL + "/wd/hub";
 		final WebDriver driver = new RemoteWebDriver(new URL(url), desiredCapabilities);
 		//      打开百度
-		driver.get("http://www.baidu.com");
+		driver.get("http://www.bing.com");
 		System.out.println(browser + driver.getTitle());
 		//      关闭浏览器
 		driver.quit();
