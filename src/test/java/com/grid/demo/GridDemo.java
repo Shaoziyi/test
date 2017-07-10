@@ -46,7 +46,7 @@ public class GridDemo
 		final WebDriver driver = new RemoteWebDriver(new URL(url), desiredCapabilities);
 		//      打开百度
 		driver.get("http://www.bing.com");
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		System.out.println(browser + driver.getTitle());
 		//      关闭浏览器
 		driver.quit();
@@ -69,12 +69,11 @@ public class GridDemo
 	{
 		return new Object[][]
 		{
-				{ "http://16.165.188.82:5555", "ie" },
-				{ "http://16.187.153.11:5555", "chrome" },
-				{ "http://16.187.153.9:5555", "ie" },
+				//{ "http://120.0.0.1", "ie" },
+				//{ "http://16.187.153.11:5555", "ie" },
 				//{ "http://16.187.153.9:5555", "ie" },
-				//{ "http://16.187.153.11:5555", "chrome" },
-		};
+				//{ "http://16.187.153.9:5555", "ie" },
+				{ "http://127.0.0.1:5555", "chrome" }, };
 	}
 
 

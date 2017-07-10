@@ -13,6 +13,10 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class TestChrome
 {
+	/**
+	 * @param args
+	 * @throws IOException
+	 */
 	public static void main(final String[] args) throws IOException
 	{
 		//
